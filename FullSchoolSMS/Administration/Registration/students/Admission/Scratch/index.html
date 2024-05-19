@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Admission</title>
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="skeleton">
+        <div class="inner">
+           <div class="leftNav"></div>
+           <div class="rightNav">
+            <form action="#" method="post">
+            <div class="groupContainer">
+                    <div class="selectGrp">
+                        <label for="pre_adm_code"> Pre Admission Number <b id="required">*</b></label>
+                        <select name="pre_adm_code" id="1" >
+                            <option value="name 1">name 1</option>
+                            <option value="name 2">name 2</option>
+                            <option value="name 3">name 6</option>
+                        </select>
+                    </div>
+                    <div class="inputGrpNmbr">
+                        <label for="AdmNo">Admission Number <b id="required">*</b></label>
+                        <input type="number" name="AdmNo" id="admNo">  
+                    </div>
+            </div>
+            <div class="groupContainer">
+                <div class="inputGrpTxt">
+                    <label for="FirstName">First Name <b id="required">*</b></label>
+                    <input type="text" name="FirstName" id="admNo">  
+                </div>
+                <div class="inputGrpTxt">
+                    <label for="LastName">Last Name <b id="required">*</b></label>
+                    <input type="text" name="LastName" id="admNo">  
+                </div>
+                <div class="inputGrpRadio">
+                    <label for="LastName">Gender <b id="required">*</b></label>
+                    <input type="radio" name="gender" id="Gender" value="Male"> male 
+                    <input type="radio" name="gender" id="Gender" value="female"> female 
+                </div>
+                
+                <div class="inputGrpDate">
+                    <label for="DOB">Date of Birth <b id="required">*</b></label>
+                    <input type="date" name="DOB" id="admNo">  
+                </div>
+                <div class="inputGrpNmbr">
+                    <label for="KcpeMarks">Age</label>
+                    <input type="number" name="Age" id="admNo">  
+                </div>
+                <div class="inputGrpDate">
+                    <label for="DOR">Date of Admission <b id="required">*</b></label>
+                    <input type="date" name="DOR" id="admNo">  
+                </div>
+            </div>
+            
+        <div class="groupContainer" id="otherInfo">
+                <div class="inputGrpNotes">
+                    <label for="HealthNotes">Health information Notes <b id="required">*</b></label>
+                    <input type="text" name="HealthNotes" id="admNo">  
+                </div>
+                <div class="inputGrpNmbr">
+                    <label for="KcpeMarks">Kcpe Marks <b id="required">*</b></label>
+                    <input type="number" name="KcpeMarks" id="admNo">  
+                </div>
+                <div class="selectGrp">
+                    <label for="Location"> Location</label>
+                    <select name="Location" id="1" >
+                        <option value="name 1">name 1</option>
+                        <option value="name 2">name 2</option>
+                        <option value="name 3">name 6</option>
+                    </select>
+                </div>
+                <div class="inputGrpRadio">
+                    <label for="Curriculumn">Residence <b id="required">*</b></label>
+                    <input type="radio" name="Residence"id="admNo">  Day_Schollar
+                    <input type="radio" name="Residence" id="admNo"> Boarder
+                </div>
+            </div>
+            <div class="groupContainer" id="parentInfo">
+                <div class="inputGrpTxt">
+                    <label for="ParentName">Parent's Name <b id="required">*</b></label>
+                    <input type="text" name="ParentName" id="admNo">  
+                </div>
+                <div class="inputGrpTxt">
+                    <label for="ParentRelation">Parent's Relation <b id="required">*</b></label>
+                    <input type="text" name="ParentRelation" id="admNo">  
+                </div>
+                <div class="inputGrpPhone">
+                    <label for="ParentPhoneNo"> Parent phone no: <b id="required">*</b></label>
+                    <input type="tel" name="ParentPhoneNo" id="admNo">  
+                </div>
+                <div class="inputGrpEmail">
+                    <label for="ParentEmail"> Parent Email<b id="required">*</b></label>
+                    <input type="email" name="ParentEmail id="admNo">  
+                </div>
+            </div>
+            <div class="groupContainer" id="classInfo">
+                <div class="selectGrp">
+                    <label for="class"> Class</label>
+                    <select name="class" id="1" >
+                        <option value="name 1">name 1</option>
+                        <option value="name 2">name 2</option>
+                        <option value="name 3">name 6</option>
+                    </select>
+                </div>
+                <div class="selectGrp">
+                    <label for="stream"> Stream</label>
+                    <select name="stream" id="1" >
+                        <option value="name 1">name 1</option>
+                        <option value="name 2">name 2</option>
+                        <option value="name 3">name 6</option>
+                    </select>
+                </div>
+                <div class="inputGrpTxt">
+                    <label for="Curriculumn">Curriculumn <b id="required">*</b></label>
+                    <input type="text" name="Curriculumn" id="admNo">  
+                </div>
+                <div class="category">
+                    <div class="groupOfThings">
+                        <button type="button">
+                            Add subject
+                        </button>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="groupOfThings">
+                        <button type="button">
+                            Add subject
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="inputGrpTxt">
+                    <label for="Curriculumn"> Dorm<b id="required">*</b></label>
+                    <input type="text" name="Dorm" id="admNo">  
+                </div>
+            </div>
+            <div class="inputGrpUploads">
+                <div>
+                <label for="studentPhoto">UploadStudent photo</label>
+                <input type="file" name="studentPhoto" id="studentPhoto">
+                <button>view object</button>
+                </div>
+                <div>
+                    <label for="studentResultSlip">UploadStudent ResultSlip</label>
+                    <input type="file" name="studentResultSlip" id="studentResultSlip">
+                    <button>view object</button>
+                </div>
+                <div>
+                    <label for="studentBirthCertificate">UploadStudent studentBirthCertificate</label>
+                    <input type="file" name="studentBirthCertificate" id="studentBirthCertificate">
+                    <button>view object</button>
+                </div>
+                
+
+            </div>
+            <div class="buttonsGroup">
+                <button>
+                    button 1
+                </button>
+                <button>
+                    button 2
+                </button>
+                <button>
+                    button 3
+                </button>
+                <button>
+                    button 4
+                </button>
+                <button>
+                    button 5
+                </button>
+                <button>
+                    button 6
+                </button>
+                <button>
+                    button 7
+                </button>
+            </div>
+            <div class="summaryGUI">
+                <div class="container">
+
+                </div>
+                <div class="container">
+                    
+                </div>
+                <div class="container">
+                    
+                </div>
+            </div>
+            </form>
+            
+           </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
+<!-- <form action="#" method="post">
+               
+    <div class="selectGrp">
+    <label for="pre_adm_code"> Pre Admission Number</label>
+    <select name="pre_adm_code" id="1" >
+        <option value="name 1">name 1</option>
+        <option value="name 2">name 2</option>
+        <option value="name 3">name 6</option>
+    </select>
+</div>
+<div class="inputGrpNumber">
+    <label for="AdmNo">Admission Number <b id="required">*</b></label>
+    <input type="number" name="AdmNo" id="admNo">  
+</div>
+<div class="inputGrpTxt">
+    <label for="FirstName">Admission Number <b id="required">*</b></label>
+    <input type="number" name="AdmNo" id="admNo">  
+</div>
+</form> -->

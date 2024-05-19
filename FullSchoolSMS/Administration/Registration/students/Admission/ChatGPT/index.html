@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Access</title>
+</head>
+<body>
+    <button id="captureButton">Capture Image</button>
+    <br>
+    <video id="videoElement" width="400" height="300" autoplay></video>
+    <canvas id="canvasElement" width="400" height="300"></canvas>
+
+    <script>
+        // Function to check if the browser supports getUserMedia API
+        function hasGetUserMedia() {
+            return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+        }
+
+        // Function to handle camera access
+        async function handleCameraAccess() {
+            // Check if getUserMedia is supported
+            if (hasGetUserMedia()) {
+                try {
+                    // Request access to the camera
+                    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+
+                    // Display the camera stream on a video element
+                    const video = document.getElementById('videoElement');
+                    video.srcObject = stream;
+
+                    // Wait for the video to load metadata
+                    video.onloadedmetadata = function() {
+                        video.play();
+
+                        // Capture an image from the camera
+                        const canvas = document.getElementById('canvasElement');
+                        const context = canvas.getContext('2d');
+                        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                        // Convert the captured image to a data URL
+                        const imageDataURL = canvas.toDataURL('image/png');
+
+                        // Clear previous captured image
+                        const previousImage = document.getElementById('capturedImage');
+                        if (previousImage) {
+                            previousImage.remove();
+                        }
+
+                        // Display the captured image below the button
+                        const image = new Image();
+                        image.id = 'capturedImage';
+                        image.src = imageDataURL;
+                        document.body.appendChild(image);
+
+                        // Stop the camera stream
+                        stream.getTracks().forEach(track => track.stop());
+                    };
+                } catch (error) {
+                    console.error('Error accessing camera:', error);
+                }
+            } else {
+                console.error('getUserMedia API not supported by this browser.');
+            }
+        }
+
+        // Ask for camera permission when the button is clicked
+        document.getElementById('captureButton').addEventListener('click', handleCameraAccess);
+    </script>
+</body>
+</html>

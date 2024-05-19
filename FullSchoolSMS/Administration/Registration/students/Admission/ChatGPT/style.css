@@ -1,0 +1,102 @@
+/* globals.css */
+
+:root {
+    --background-color: #f4f4f4;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --input-background-color: #fff;
+    --input-border-color: #ced4da;
+    --input-focus-color: #007bff;
+    --border-radius: 5px;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--background-color-1);
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: auto;
+}
+
+.skeleton {
+    margin: 10px;
+    min-height: 97vh;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(250, 247, 247, 0.877);
+}
+
+.inner {
+    display: flex;
+}
+
+.leftNav {
+    border: 1px solid #ffffff;
+    width: 25vw;
+    min-height: 96vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.rightNav {
+    border: 1px solid #ffffff;
+    width: 75vw;
+    min-height: 96vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.rightNav form {
+    border: 1px solid;
+    padding: 3px;
+    margin: 3px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.selectGrp,
+.inputGrpTxt,
+.inputGrpNmbr,
+.inputGrpDate,
+.inputGrpNotes,
+.inputGrpEmail,
+.inputGrpPhone,
+.inputGrpRadio,
+.groupOfThings,
+.inputGrpUploads {
+    border: 1px solid;
+    margin: 3px;
+    padding: 3px;
+}
+
+.selectGrp select,
+.inputGrpTxt input,
+.inputGrpNmbr input,
+.inputGrpDate input,
+.inputGrpNotes input,
+.inputGrpEmail input,
+.inputGrpPhone input,
+.groupOfThings,
+.inputGrpUploads input {
+    width: 5cm;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+
+#required {
+    color: rgb(247, 160, 0);
+}
+
+.groupOfThings button {
+    padding: 10px;
+    cursor: pointer;
+}

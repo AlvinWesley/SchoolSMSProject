@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Admission</title>
+    <!-- <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/index.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="skeleton">
+        <div class="inner">
+           <div class="leftNav"></div>
+           <div class="rightNav">
+            <form action="#" method="post">
+                <div class="groupcontainer">
+                    <div class="selectGrp">
+                        <label for="pre_adm_code">Pre Admission Number <b class="required">*</b></label>
+                        <select name="pre_adm_code" id="pre_adm_code" required>
+                            <option value="name1">Name 1</option>
+                            <option value="name2">Name 2</option>
+                            <option value="name3">Name 3</option>
+                        </select>
+                    </div>
+                    <div class="inputGrpNmbr">
+                        <label for="AdmNo">Admission Number <b class="required">*</b></label>
+                        <input type="number" name="AdmNo" id="AdmNo" required>  
+                    </div>
+                </div>
+                <div class="groupContainer">
+                    <div class="inputGrpTxt">
+                        <label for="FirstName">First Name <b class="required">*</b></label>
+                        <input type="text" name="FirstName" id="FirstName" required>  
+                    </div>
+                    <div class="inputGrpTxt">
+                        <label for="LastName">Last Name <b class="required">*</b></label>
+                        <input type="text" name="LastName" id="LastName" required>  
+                    </div>
+                    <div class="inputGrpRadio">
+                        <label for="Gender">Gender <b class="required">*</b></label><br>
+                        <input type="radio" name="gender" id="Male" value="Male" required> <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female" value="Female" required> <label for="Female">Female</label>
+                    </div>
+                    <div class="inputGrpDate">
+                        <label for="DOB">Date of Birth <b class="required">*</b></label>
+                        <input type="date" name="DOB" id="DOB" required>  
+                    </div>
+                    <div class="inputGrpNmbr">
+                        <label for="Age">Age</label>
+                        <input type="number" name="Age" id="Age">  
+                    </div>
+                    <div class="inputGrpDate">
+                        <label for="DOR">Date of Admission <b class="required">*</b></label>
+                        <input type="date" name="DOR" id="DOR" required>  
+                    </div>
+                </div>
+                <div class="groupContainer" id="otherInfo">
+                    <div class="inputGrpNotes">
+                        <label for="HealthNotes">Health Information Notes <b class="required">*</b></label>
+                        <input type="text" name="HealthNotes" id="HealthNotes" required>  
+                    </div>
+                    <div class="inputGrpNmbr">
+                        <label for="KcpeMarks">KCPE Marks <b class="required">*</b></label>
+                        <input type="number" name="KcpeMarks" id="KcpeMarks" required>  
+                    </div>
+                    <div class="selectGrp">
+                        <label for="Location">Location</label>
+                        <select name="Location" id="Location" required>
+                            <option value="location1">Location 1</option>
+                            <option value="location2">Location 2</option>
+                            <option value="location3">Location 3</option>
+                        </select>
+                    </div>
+                    <div class="inputGrpRadio">
+                        <label for="Residence">Residence <b class="required">*</b></label><br>
+                        <input type="radio" name="Residence" id="DayScholar" value="Day Scholar" required> <label for="DayScholar">Day Scholar</label>
+                        <input type="radio" name="Residence" id="Boarder" value="Boarder" required> <label for="Boarder">Boarder</label>
+                    </div>
+                </div>
+                <div class="groupContainer" id="parentInfo">
+                    <div class="inputGrpTxt">
+                        <label for="ParentName">Parent's Name <b class="required">*</b></label>
+                        <input type="text" name="ParentName" id="ParentName" required>  
+                    </div>
+                    <div class="inputGrpTxt">
+                        <label for="ParentRelation">Parent's Relation <b class="required">*</b></label>
+                        <input type="text" name="ParentRelation" id="ParentRelation" required>  
+                    </div>
+                    <div class="inputGrpPhone">
+                        <label for="ParentPhoneNo">Parent Phone No: <b class="required">*</b></label>
+                        <input type="tel" name="ParentPhoneNo" id="ParentPhoneNo" required>  
+                    </div>
+                    <div class="inputGrpEmail">
+                        <label for="ParentEmail">Parent Email <b class="required">*</b></label>
+                        <input type="email" name="ParentEmail" id="ParentEmail" required>  
+                    </div>
+                </div>
+                <div class="groupContainer" id="classInfo">
+                    <div class="selectGrp">
+                        <label for="class">Class</label>
+                        <select name="class" id="class" required>
+                            <option value="class1">Class 1</option>
+                            <option value="class2">Class 2</option>
+                            <option value="class3">Class 3</option>
+                        </select>
+                    </div>
+                    <div class="selectGrp">
+                        <label for="stream">Stream</label>
+                        <select name="stream" id="stream" required>
+                            <option value="stream1">Stream 1</option>
+                            <option value="stream2">Stream 2</option>
+                            <option value="stream3">Stream 3</option>
+                        </select>
+                    </div>
+                    <div class="inputGrpTxt">
+                        <label for="Curriculum">Curriculum <b class="required">*</b></label>
+                        <input type="text" name="Curriculum" id="Curriculum" required>  
+                    </div>
+                    <div class="category">
+                        <div class="groupOfThings">
+                            <button type="button">Add Subject</button>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="groupOfThings">
+                            <button type="button">Add Subject</button>
+                        </div>
+                    </div>
+                    <div class="inputGrpTxt">
+                        <label for="Dorm">Dorm <b class="required">*</b></label>
+                        <input type="text" name="Dorm" id="Dorm" required>  
+                    </div>
+                </div>
+                <div class="inputGrpUploads">
+                    <label for="studentPhoto">Upload Student Photo</label>
+                    <input type="file" name="studentPhoto" id="studentPhoto" accept="image/*" required>
+                    <label for="studentResultSlip">Upload Student Result Slip</label>
+                    <input type="file" name="studentResultSlip" id="studentResultSlip" accept=".pdf" required>
+                    <label for="studentBirthCertificate">Upload Student Birth Certificate</label>
+                    <input type="file" name="studentBirthCertificate" id="studentBirthCertificate" accept=".pdf" required>
+                </div>
+                <div class="buttonsGrp">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+                <div class="summaryGUI">
+                    <div class="container"></div>
+                    <div class="container"></div>
+                    <div class="container"></div>
+                </div>
+            </form>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

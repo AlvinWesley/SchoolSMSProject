@@ -1,0 +1,219 @@
+body{
+    background-color: var(--background-color-1);
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    min-height:100vh;
+    min-width:100vw;
+    overflow:auto;
+    
+}
+
+.skeleton{
+    /* border: 1px solid #ffffff; */
+    margin: 10px;
+    min-height:97vh;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(250, 247, 247, 0.877);
+    
+}
+.inner{
+    display: flex;
+   
+}
+.leftNav{
+     border: 1px solid #ffffff;
+     width: 25vw;
+     min-height:96vh;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+}
+.rightNav{
+    border: 1px solid #ffffff;
+    width: 75vw;
+    min-height:96vh;
+    border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+.rightNav form{
+    /* border: 1px solid ; */
+    padding:3px;
+    margin:3px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.groupContainer{
+    /* border: 1px solid gold; */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:first baseline;
+}
+.selectGrp{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding: 3px;
+}
+.selectGrp select{
+    width: 5cm;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+#required{
+    color:rgb(247, 160, 0);
+}
+.inputGrpTxt{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding: 3px;
+}
+.inputGrpTxt input{
+    width: 5cm;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+.inputGrpNmbr{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding:3px
+}
+.inputGrpNmbr input{
+    width: 5cm;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+.inputGrpDate{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding:3px
+}
+.inputGrpDate input{
+    width: 5cm;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+.inputGrpNotes{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding:3px
+}
+.inputGrpNotes input{
+    width: 5cm;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+.inputGrpEmail{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding:3px
+}
+.inputGrpEmail input{
+    width: 5cm;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+.inputGrpPhone{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding:3px
+}
+.inputGrpPhone input{
+    width: 5cm;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+.inputGrpRadio{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding:3px
+}
+.inputGrpRadio input{
+   width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    outline: none;
+    /* box-shadow: 0 0 10px rgba(235, 235, 235, 0.986); */
+    border: none;
+    background-color: #fffdfd;
+}
+.groupOfThings{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding:3px;
+    width: 5cm;
+    min-height: 26px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.986);
+    border: none;
+    background-color: #fffdfd;
+}
+.groupOfThings button{
+    padding: 10px;
+    cursor: pointer;
+}
+.inputGrpUploads{
+    /* border: 1px solid ; */
+    margin: 3px;
+    padding:3px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:5px;
+}
+.inputGrpUploads div{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputGrpUploads input{
+  min-width: 20px;
+    min-height: 20px;
+    border-radius: 10px;
+    outline: none;
+    /* box-shadow: 0 0 10px rgba(235, 235, 235, 0.986); */
+    border: none;
+    background-color: #fffdfd;
+}
+
+.buttonsGroup{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.buttonsGroup button{
+    padding:10px;
+    min-height: 30px;
+    min-width: 40px;
+}
